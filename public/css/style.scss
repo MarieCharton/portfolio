@@ -1,21 +1,6 @@
 $violet: #2d0a58;
 $orange : #ec7106;
 
-
-/* 5 items in the list */
-$number_of_items: 5;
-
-/* Transition time */
-$animation_time: .6s;
-
-/* Distance of an item from the center */
-$dist_item: 60px;
-
-/* Toggle Button properties */
-$btn_bg_color: #FFEB3B;
-$btn_font_color: #222;
-$btn_size: 60px;
-
 body{
   font-family: 'Shadows Into Light', cursive,'Open Sans', sans-serif;
   background-color: $violet;
