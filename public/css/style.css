@@ -31,24 +31,21 @@ header {
 
 /*BACKTOTOP BUTTON*/
 #back-to-top-btn {
-  font-size: 5em;
-  color: #000;
-  background-color: #ec7106;
-  border: 3px solid black;
-  border-radius: 50%;
-  padding: 10px;
-  display: none;
-  position: fixed;
-  bottom: 1%;
-  right: 1%;
-  cursor: pointer;
-  outline: none;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-property: background-color, color; }
-  #back-to-top-btn:hover {
-    color: #ec7106;
-    background-color: black; }
+  display: none; }
+  #back-to-top-btn .fa-arrow-circle-up {
+    font-size: 5em;
+    color: black;
+    background-color: #ec7106;
+    border: 3px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 12; }
+    #back-to-top-btn .fa-arrow-circle-up:hover {
+      color: #ec7106;
+      background-color: black; }
 
 /* ANIMATED CARD */
 .center {
@@ -172,7 +169,7 @@ header {
   .footer a {
     text-decoration: none;
     font-size: 1.5em;
-    color: orange; }
+    color: #ec7106; }
 
 /* Version Mobile*/
 @media (max-width: 767px) {
@@ -194,11 +191,11 @@ header {
     top: 7%; }
 
   /*BACKTOTOP BUTTON*/
-  #back-to-top-btn {
-    font-size: 2em; }
+  #back-to-top-btn .fa-arrow-circle-up {
+    font-size: 3em; }
 
   .content .text a {
-    font-size: 0.8em; }
+    font-size: 0.7em; }
 
   /*CV PAGE */
   .cvpicture img {
@@ -213,7 +210,6 @@ header {
     .portofolio-card .article {
       display: block; }
     .portofolio-card .portofolio-image {
-      background-color: lightblue;
       width: 100%; }
       .portofolio-card .portofolio-image img {
         width: 100%; }
@@ -222,6 +218,8 @@ header {
       font-size: 1.2em; }
       .portofolio-card .portofolio-content h1 {
         font-size: 1.4em; }
+      .portofolio-card .portofolio-content ul {
+        padding: 0px; }
     .portofolio-card .site-link {
       display: flex;
       justify-content: center;
@@ -234,8 +232,46 @@ header {
         text-decoration: none;
         letter-spacing: 3px; } }
 /******TABLET*****/
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 767px) and (max-width: 1280px) {
   header {
-    height: 200px; } }
+    height: 240px; }
+
+  /*HOMEBUTTON*/
+  .home-button .fa-home {
+    font-size: 4em;
+    top: 10%; }
+
+  /*CV PAGE */
+  .cvpicture img {
+    width: 85%; }
+
+  /*PORTOFOLIO PAGE */
+  .portofolio-card {
+    width: 75%; }
+    .portofolio-card .article {
+      display: block; }
+    .portofolio-card .portofolio-image {
+      width: 100%; }
+      .portofolio-card .portofolio-image img {
+        width: 100%; }
+    .portofolio-card .portofolio-content {
+      width: 100%;
+      font-size: 1.2em; }
+      .portofolio-card .portofolio-content h1 {
+        font-size: 1.4em; }
+      .portofolio-card .portofolio-content ul {
+        padding: 0px; }
+
+  .site-link {
+    display: flex;
+    justify-content: center;
+    margin: auto; }
+    .site-link a {
+      margin: 10px;
+      padding: 10px;
+      font-size: 0.8em;
+      text-align: center;
+      text-decoration: none;
+      letter-spacing: 3px; } }
 
 /*# sourceMappingURL=style.css.map */

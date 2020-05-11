@@ -37,29 +37,28 @@ header{
     }
   }
 }
-
 /*BACKTOTOP BUTTON*/
 #back-to-top-btn{
+  display: none;
+  .fa-arrow-circle-up{
     font-size: 5em;
-    color:#000;
-    background-color:$orange;
+    color: black;
+    background-color: $orange;
     border: 3px solid black;
     border-radius: 50%;
     padding: 10px;
-    display: none;
     position: fixed;
     bottom :1%;
     right: 1%;
-    cursor: pointer;
-    outline: none;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-property: background-color, color;
+    z-index: 12;
     &:hover{
       color: $orange;
       background-color: black;
     }
+
+  }
 }
+
 /* ANIMATED CARD */
 .center {
   width:100%;
@@ -147,7 +146,6 @@ header{
 /*PORTOFOLIO PAGE */
 .portofolio-card{
   background-color:#f97903;
-  // background-color: red;
   padding: 25px;
   width: 60%;
   margin: auto;
@@ -155,11 +153,9 @@ header{
   margin-top: 150px;
   border-radius: 20px;
   .article{
-    // background-color: green;
     display: flex;
   }
   .portofolio-image{
-    // background-color: lightblue;
     width: 40%;
     margin: auto;
     img{
@@ -171,7 +167,6 @@ header{
     width: 60%;
     text-align: center;
     padding: 5px;
-    // background-color: blue;
     font-size: 1.2em;
     li{
       list-style: none;
@@ -212,7 +207,7 @@ header{
   a{
   text-decoration: none;
   font-size: 1.5em;
-  color:orange;
+  color: $orange;
   }
 }
 
@@ -243,13 +238,15 @@ header{
 }
 
 /*BACKTOTOP BUTTON*/
-#back-to-top-btn{
-    font-size: 2em;
-}
+  #back-to-top-btn{
+    .fa-arrow-circle-up{
+      font-size: 3em;
+    }
+  }
   .content{
     .text{
       a{
-        font-size: 0.8em;
+        font-size: 0.7em;
       }
     }
   }
@@ -271,7 +268,6 @@ header{
     display: block;
   }
   .portofolio-image{
-    background-color: lightblue;
     width: 100%;
     img{
       width: 100%;
@@ -282,6 +278,9 @@ header{
     font-size: 1.2em;
     h1{
       font-size: 1.4em;
+    }
+    ul{
+      padding:0px;
     }
   }
   .site-link{
@@ -303,10 +302,62 @@ header{
 
 
 /******TABLET*****/
+@media (min-width:767px)and (max-width:1280px){
 
-@media (min-width:768px)and (max-width:1280px){
   header{
-    height: 200px;
-
+    height: 240px;
   }
+
+    /*HOMEBUTTON*/
+  .home-button{
+    .fa-home{
+      font-size: 4em;
+      top :10%;
+  
+    }
+  }
+  /*CV PAGE */
+  .cvpicture{
+    img{
+       width: 85%;
+    }
+  }
+  /*PORTOFOLIO PAGE */
+  .portofolio-card{
+    width: 75%;
+    .article{
+      display: block;
+    }
+    .portofolio-image{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+    .portofolio-content{
+      width: 100%;
+      font-size: 1.2em;
+      h1{
+        font-size: 1.4em;
+      }
+      ul{
+        padding:0px;
+      }
+    }
+  }
+  .site-link{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    a{
+      margin: 10px;
+      padding: 10px;
+      font-size: 0.8em;
+      text-align: center;
+      text-decoration: none;
+      letter-spacing: 3px;
+    }
+  }
+
+  
 }
